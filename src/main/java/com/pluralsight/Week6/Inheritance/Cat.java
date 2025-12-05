@@ -1,0 +1,21 @@
+package com.pluralsight.Week6.Inheritance;
+
+public class Cat extends Animal{
+    public Cat(String name, int age, String color, int nrOfLivesLeft) {
+        super(name, age, color, nrOfLivesLeft);
+        this.nrOfLivesLeft = nrOfLivesLeft;
+    }
+
+    private int nrOfLivesLeft;
+
+    public int getNrOfLivesLeft() {
+        return nrOfLivesLeft;
+    }
+
+    public void setNrOfLivesLeft(int nrOfLivesLeft) {
+        this.nrOfLivesLeft = nrOfLivesLeft;
+    }
+    public void meow() {
+        System.out.println(getName() + " says: MEOW");
+    }
+}
