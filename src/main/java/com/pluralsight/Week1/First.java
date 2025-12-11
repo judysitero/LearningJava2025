@@ -1,6 +1,8 @@
-package com.pluralsight;
+package com.pluralsight.Week1;
 
 public class First {
+    static int h = 9;
+
     public static void main(String[] args) {
         //outputting the word Hi!
         System.out.println("Hi!");
@@ -19,6 +21,7 @@ public class First {
             System.out.println(y);
             System.out.println(x);
         }
+        System.out.println(h);
 
     }
 }
