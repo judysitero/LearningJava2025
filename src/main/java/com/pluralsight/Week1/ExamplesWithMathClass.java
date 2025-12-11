@@ -1,4 +1,6 @@
-package com.pluralsight;
+package com.pluralsight.Week1;
+
+import java.util.Random;
 
 public class ExamplesWithMathClass {
     public static void main(String[] args) {
@@ -16,15 +18,22 @@ public class ExamplesWithMathClass {
         System.out.println(Math.ceil(d)); // rounds up to the nearest whole number
         System.out.println(Math.round(d)); // rounds to the nearest whole number based on a common rounding rule: round half up. if decimal part is .5 or greater, it rounds up. If less than .5, it rounds down
 
+//  I believe this just gives me any random number neg or pos?
+        Random random = new Random();
+        int randomNumber = random.nextInt();
+        System.out.println(randomNumber);
+
+//        gives me random numbers between 0-1
         double randomValue = Math.random();
         System.out.println(randomValue);
 
         // I want a number between 0 and 100
-        int randomNr = (int) (Math.random() * 100);
-        System.out.println(randomNr);
-
-//        int randomNr = (int) Math.round((Math.random() * 100));
+//        int randomNr = (int) (Math.random() * 100);
 //        System.out.println(randomNr);
+
+//        Another way
+        int randomNr = (int) Math.round((Math.random() * 100));
+        System.out.println(randomNr);
 
     }
 }
